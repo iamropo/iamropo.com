@@ -16,8 +16,7 @@ html, body {
   background-color: #ffffff;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-/*  font-family: 'Fjalla One', sans-serif;
-*/}
+}
 
 body, div {
 	justify-content: center;
@@ -31,6 +30,10 @@ body, div {
   border: 2px solid #4885ed;
   background-color: #4885ed;
   box-shadow: 3px 4px 8px #d5d5d5;
+}
+
+#text-link {
+  display: none;
 }
 
 #thread {
@@ -49,4 +52,18 @@ body, div {
   font-size: 2.5em;
   position: relative;
   left: -2px;
+}
+
+@media (max-width: 640px) {
+  body {
+    flex-flow: column;
+  }
+  #text-link {
+    display: block;
+    margin-top: 20px; 
+    color: #4885ed;
+  }
+  #thread, #tag {
+    display: none;
+  }
 }
