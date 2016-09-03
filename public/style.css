@@ -19,10 +19,7 @@ body {
 h2 {
   margin: 0;
   font-size: 2em;
-  // font-family: 'Amatic SC', cursive;
-
   font-family: 'Galada', cursive;
-  // font-family: 'Londrina Shadow', cursive;
 }
 
 #description, ul {
@@ -50,7 +47,7 @@ footer > a {
   body {
     box-sizing: content-box;
   }
-  
+
   footer > a {
     color: #0c0c0c;
     font-size: 1.5em;
