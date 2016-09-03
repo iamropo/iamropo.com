@@ -16,13 +16,24 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  margin: 0;
+  font-size: 2em;
+  // font-family: 'Amatic SC', cursive;
+
+  font-family: 'Galada', cursive;
+  // font-family: 'Londrina Shadow', cursive;
+}
+
 #description, ul {
   max-width: 50%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin-left: 0;
 }
 
 li {
@@ -31,11 +42,23 @@ li {
 
 footer > a {
   margin: 5px;
+  color: #0c0c0c;
+  font-size: 1.2em;
 }
 
 @media all and (max-width: 800px) {
+  body {
+    box-sizing: content-box;
+  }
+  
   footer > a {
     color: #0c0c0c;
     font-size: 1.5em;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #description, user-select: none; {
+    font-size: .9em;
   }
 }
