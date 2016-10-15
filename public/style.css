@@ -71,6 +71,7 @@ a {
   margin-right: 20%;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -82,10 +83,14 @@ a {
 
 .blog-post img {
   width: 30%;
+  vertical-align: top;
   background-image: url(rn.jpg);
 }
 
 .blog-post p.blog-snippet {
+  font-weight: 100;
+  font-family: 'Open Sans';
+  margin-top: 0;
   padding-left: 15px;
   width: 70%;
   overflow: hidden;
