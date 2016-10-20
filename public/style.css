@@ -72,6 +72,11 @@ a {
   color: #0266C8;
 }
 
+#no-post {
+  text-align: center;
+}
+
+
 /*Blog-post Contents*/
 .blog-post {
   width: 60%;
