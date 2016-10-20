@@ -71,6 +71,10 @@ a {
   text-decoration: none;
   color: #0266C8;
 }
+/*No blog post*/
+#no-post {
+  text-align: center;
+}
 
 /*Blog-post Contents*/
 .blog-post {
