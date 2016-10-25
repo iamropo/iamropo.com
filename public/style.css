@@ -1,3 +1,4 @@
+/*Use Roboto for headers and Open Sans for paragraphs*/
 * {
   box-sizing: border-box;
 }
@@ -22,7 +23,7 @@ body {
   flex-flow: column;
   -ms-flex-align: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
