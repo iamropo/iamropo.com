@@ -23,11 +23,7 @@ body {
   flex-flow: column;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD:public/css/style.css
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: 'Roboto', sans-serif;
->>>>>>> origin/feature/routing:public/style.css
 }
 
 nav {
