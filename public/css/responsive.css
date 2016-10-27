@@ -22,7 +22,7 @@
 		margin-right: 10%;
 	}
 }
-
+/*Display .mobile*/
 @media (max-width: 480px) {
 	nav ul li, .blog-post p.blog-snippet {
 		font-size: .7em;
