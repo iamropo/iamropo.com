@@ -72,18 +72,19 @@ a {
   text-decoration: none;
   color: #0266C8;
 }
+
+/*Blog Posts Parent Container*/
+div#blog-posts-container {
+  /*empty*/
+}
+
 /*No blog post*/
 #no-post {
   text-align: center;
 }
 
-#no-post {
-  text-align: center;
-}
-
-
-/*Blog-post Contents*/
-.blog-post {
+/*Blog-post-list Contents*/
+.blog-post-list {
   width: 60%;
   height: 30%;
   margin-left: 20%;
@@ -98,21 +99,21 @@ a {
   text-overflow: ellipsis;
 }
 
-.blog-post h2 {
+.blog-post-list h2 {
   width: 100%;
   font-size: 1.3em;
   font-family: 'Roboto', sans-serif;
   color: rgba(0,0,0,.8);
 }
 
-.blog-post img {
+.blog-post-list img {
   width: 100px;
   height: 75px;
   float: left;
   padding-right: 15px;
 }
 
-.blog-post p.blog-snippet {
+.blog-post-list p.blog-snippet {
   font-size: 1em;
   font-family: 'Open Sans';
   margin-top: 0;
