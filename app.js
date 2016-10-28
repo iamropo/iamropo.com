@@ -1,33 +1,48 @@
+const fs = require('fs');
 const http = require('http');
 const express = require('express');
 const mongodb = require('mongodb');
-// non npm modules
-var list = require('./list');
+// custom modules
 
 var app = express();
 var mongoClient = mongodb.MongoClient;
 var mongoURL = 'mongodb://localhost:27017/blog'; // 'blog' is the name of the database
 
-// callback to handle error
-function respond(err, result) {
-  return err ? 'No post found' : result;
+// callback to respond list (& handle error)
+
+// function arrangeList(data) {
+//   var list = ''; // html
+//   data.forEach((blog) => {
+//     var header = '<h2>' + blog.header.replace('_', ' ') + '<h2>';
+//     var thumbnail = '<img src=' + blog.thumbnail + '>';
+//     var
+//   });
+// }
+
+function respondList(err, docs, res) {
+  // have to do more of coding
+
+  res.send(err ? 'No posts found' : docs);
 }
 
-function getPostList (callback, tag) => {
+function respondPost(err, docs, res) {
+  res.send(err? 'No posts found.' : docs);
+}
+
+// to get list  of posts
+function getPostList (callback, res, tag) {
   var tag = null || tag;
-  var posts;
   mongoClient.connect(mongoURL, (err, db) => {
-    db.collection(collection).find(tag).toArray((err, docs) => {
-      posts = callback(err, docs);
+    db.collection('blogPosts').find(tag).toArray((err, docs) => {
+      callback(err, docs, res); // this is gonna
+      db.close();
     });
-    db.close();
   });
 }
 
-var posts = list()
-
-// var posts = list(mongoClient, 'blogPosts', mongoURL, respond);
-console.log(list.getList(mongoClient, 'blogPosts', mongoURL, respond))
 app.use('/', express.static('public'));
+app.get('/', (req, res) => {
+  getPostList(respond, res);
+});
 
 http.createServer(app).listen(1337, () => {console.log('Server Running...')});
