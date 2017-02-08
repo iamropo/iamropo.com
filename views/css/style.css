@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	width: 100%;
+	padding: 0% 5%;
+	background-color: black;
+}
+
+nav > * {
+	display: inline-block;
+}
+
+#home {
+	padding: 15px 0px;
+}
+
+nav ul {
+	float: right;
+	margin: 15px 0px 0px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+canvas {
+	position: absolute;
+}
+
