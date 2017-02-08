@@ -5,17 +5,19 @@ html
 		style
 			include css/style.css
 
-		#cover
+		include includes/navigation-bar.pug
+		
+		#cover.section
 			include includes/cover.pug
 
-		#projects
+		#projects.section
 			include includes/projects.pug
 
-		#misc
-			include includes/misc.pug
+		#art.section
+			include includes/art.pug
 
 		-var year = new Date().getFullYear()
-		footer &#169; Copyright Hage Ropo #{year} 
+		footer.section &#169; Copyright Hage Ropo #{year} 
 		
 		script
 			include js/cover.js
