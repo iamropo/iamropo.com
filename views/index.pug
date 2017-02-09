@@ -1,7 +1,9 @@
 doctype html
 html
-	body
+	head
+		title Hage Ropo
 		include includes/header.pug
+	body
 		style
 			include css/style.css
 
@@ -14,7 +16,7 @@ html
 			include includes/projects.pug
 
 		#art.section
-			include includes/art.pug
+			include includes/misc.pug
 
 		-var year = new Date().getFullYear()
 		footer.section &#169; Copyright Hage Ropo #{year} 
