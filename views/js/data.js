@@ -1,6 +1,6 @@
 var data = {
-	about: `Hi! Myself Hage Ropo and I am a web developer. JavaScript is what I spend my time with the most.  
-	Apart from being a developer, I like soccer, art and good fonts.`
+	about: `Hi! My name is Hage Ropo, I design and develop web applications. JavaScript is what I spend my time with the most.  
+	Also, I love soccer, concerts, art and good fonts.`
 }
 
 module.exports = data
