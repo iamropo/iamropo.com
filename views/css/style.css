@@ -1,26 +1,51 @@
+@font-face {
+	font-family: 'Helvetica Thin';
+	src: url('../fonts/helvetica-thin.otf');
+}
+
+@font-face {
+	font-family: 'Helvetica Light';
+	src: url('../fonts/helvetica-light.otf');
+}
+
+@font-face {
+	font-family: 'averta';
+	src: url('../fonts/averta-regular.otf');
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
-	padding: 25px;
-	background-color: #ffee55;
-	color: #212121;
-	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 53px;
+	color: #4c4c4c;
+	background-color: #ffeb3d;
+	font-family: 'Helvetica Light', sans-serif;
 }
 
 a {
 	text-decoration: none;
-	color: #212121;
+	color: #4c4c4c;
 }
 
 nav {
+	position: fixed;
+	left: 0;
+	top: 0;
 	width: 100%;
+	padding: 20px 20px 14px 20px;
+	background-color: #fff38f;
 }
 
 nav a {
-	font-weight: 600;
+	color: #4c4c4c;
+	font-size: .9em;
+	font-weight: bold;
+	font-family: 'Helvetica Light', sans-serif;	
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 nav > * {
@@ -28,12 +53,12 @@ nav > * {
 }
 
 #home {
-	padding: 0px 0px 15px 0px;
+	margin-right: 15px;
 }
 
 nav ul {
-	float: right;
 	margin: 0px;
+	padding: 0;
 }
 
 nav ul li {
@@ -45,7 +70,49 @@ nav ul li:last-child {
 	margin-right: 0px; 
 }
 
+#profile-picture {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#profile-picture img {
+	width: 100%;
+}
+
+@keyframes rotatePicture {
+	from {
+		transform: rotateZ(0deg);
+	} to {
+		transform: rotateZ(360deg);
+	}
+}
+
 /* cover */
+
+.header, .section-header {
+	font-family: 'averta', sans-serif;
+}
+
+#name {
+	color: #ffffff;
+	font-size: 3em;
+	font-family: 'averta', serif;	
+	text-shadow: 0px 1px #e8d337;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.content {
+	font-size: 1em;
+	margin-bottom: 35px;
+	text-align: center;
+}
 
 canvas {
 	display: none;
@@ -54,108 +121,112 @@ canvas {
 	height: 100%;
 	top: 0;
 	left: 0;
-	padding: 15px 25px;
-}
-
-#name {
-	color: #ffffff;
-	font-size: 3em;
-	font-weight: 700;
+	padding: 15px 20px;
 }
 
 #about {
 	line-height: 1.5em;
-/*	font-family: 'Open Sans', sans-serif;
-*/
 }
 
 #skills {
-	margin-bottom: 25px;
+	margin-bottom: 35px;
+}
+
+#skills > div {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .9em;
+	font-family: 'futura-ext';
+	margin-bottom: 15px;
 }
 
 #skills-list {
 	font-size: .9em;
-	margin-left: 15px;
-	line-height: 1.5em;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-#links {
+#skills-list li {
+	padding: 6px 7px 0px 7px;
+	margin: 0 2px 4px 2px;
+	border-radius: 3px;
+	color: #ffeb3d;
+	background-color: #4c4c4c;
+}
+
+#social {
 	text-align: center;
+	margin-bottom: 35px;
 }
 
-#links > a {
-	margin: 0px 15px;
+#social > a {
+	font-size: 1.5em;
+	margin: 0px 5px;
 }
 
 .section {
 	width: 100%;
+	padding: 0px 20px;
 }
 
 .section-header {
+	position: relative;
 	text-align: center;
 	font-size: 2em;
 }
 
-#projects-container,#misc-container {
+.line {
+	display: inline-block;
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -9;
+	border-top: 1px solid #e8d337;
+}
+
+.section-header-name {
+	background-color: #ffeb3d;
+	padding: 0px 15px;
+}
+
+#projects-container {
 	width: 100%;
 }
 
-.project, .misc {
+.project {
 	width: 100%;
-	height: 75px;
+	border-radius: 3px;
 	padding: 0px 15px;
-	margin-bottom: 15px;
-	background-color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 7px;
+	font-family: 'Helvetica Thin', sans-serif;
+	background-color: #fffacf;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color:#4c4c4c;
-/*	color: #6599ff;
-*/}
-
-.project-title, .misc-stuff-title {
-	margin: 15px;
 }
 
-.project > i, .misc > i {
+.project-title {
+	margin: 7px 0px 0px 0px;
+	font-size: 1.2em;
+	color: #666666;
+}
+
+.project > i {
 	width: 5%;
+	margin: 17px 0px 15px 15px;
 	font-size: 1.5em;
 	font-weight: bolder;
-	margin: 15px;
-}
-
-#hire-status {
-	direction: rtl;
-	margin: 25px 0px 15px 15px; 
-}
-
-#hire-me {
-	display: inline-block;
-	direction: ltr;
-	padding: 5px;
-	color: #ffeb3b;
-	background-color: #212121;
-}
-
-#hire-me span {
-	display: inline-block;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background-color: #ffffff;
-	position: relative;
-}
-
-#hire-me span img {
-	width: 15px;
-	left: -11px;
-	position: absolute;
-	transform: rotateZ(90deg);
+	color: #666666;
 }
 
 footer {
-	font-size: .5em;
+	font-size: .8em;
 	text-align: center;
-	margin: 15px 0px 0px 0px;
+	margin: 46px 0px 30px 0px;
 }

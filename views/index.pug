@@ -13,14 +13,9 @@ html
 		#projects.section
 			include includes/projects.pug
 
-		#art.section
-			include includes/misc.pug
-
-		#hire-status 
-			a#hire-me(href='mailto:iamropo@gmail.com') #[span #[img(src='images/a.svg')]] hire me
-
 		-var year = new Date().getFullYear()
 		footer.section &#169; Copyright Hage Ropo #{year} 
 		
 		script
 			include js/cover.js
+			include js/index.js
