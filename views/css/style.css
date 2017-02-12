@@ -37,6 +37,7 @@ nav {
 	width: 100%;
 	padding: 20px 20px 14px 20px;
 	background-color: #fff38f;
+	z-index: 99;
 }
 
 nav a {
@@ -206,6 +207,7 @@ canvas {
 	font-family: 'Helvetica Thin', sans-serif;
 	background-color: #fffacf;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -213,15 +215,78 @@ canvas {
 .project-title {
 	margin: 7px 0px 0px 0px;
 	font-size: 1.2em;
+	font-weight: lighter;
 	color: #666666;
 }
 
 .project > i {
 	width: 5%;
-	margin: 17px 0px 15px 15px;
+	margin: 15px 0px 13px 13px;
 	font-size: 1.5em;
 	font-weight: bolder;
 	color: #666666;
+}
+
+.project-details {
+	width: 100%;
+	overflow-y: hidden;
+	transition-property: all;
+	transition-duration: .8s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.project-details > * {
+	width: 100%;
+}
+
+.closed {
+	max-height: 0px;
+	display: none;
+}
+
+.open {
+	display: block;
+	flex-wrap: wrap;
+	max-height: 10000px;
+}
+
+.project-images-container {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.project-images-container img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.project-description {
+	margin-bottom: 10px;
+}
+
+.project-link {
+	color: #4885ed;
+}
+
+.keywords {
+	list-style-type: none;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.keywords li {
+	font-size: 75%;
+	padding: 2px 5px 0px 5px;
+	margin: 0 1px 2px 1px;
+	border-radius: 3px;
+	color: #757575;
+	background-color: #fffefa;
 }
 
 footer {
