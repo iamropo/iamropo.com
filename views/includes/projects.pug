@@ -1,13 +1,16 @@
-h2.section-header #[span.line] #[span.section-header-name Projects]
+h2.section-header #[span.line] #[span.section-header-name Projects]	
 
 #projects-container
 
-	.project
+	.project#project-1
 		h5.project-title Express.js website
-		i.projects-display-button(class="fa fa-angle-down y", aria-hidden="true")
+		i.mobile-projects-display-button(class="fa fa-angle-down", aria-hidden="true")
+		i.tablet-desktop-display-button(class="fa fa-plus-circle", aria-hidden="true")
 		.project-details.closed
 			.project-images-container
-				img(src="../images/express-js/mobile.png", alt="")
+				img.mobile-image(src="../images/express-js/mobile.png", alt="")
+				img.tablet-image(src="../images/express-js/tablet.png", alt="")
+				img.desktop-image(src="../images/express-js/desktop.png", alt="")
 			.project-description.
 				Designed and implemented a responsive layout for the video on the #[a.project-link(href='http://expressjs.com') expressjs.com] home page.
 			ul.keywords
@@ -17,14 +20,34 @@ h2.section-header #[span.line] #[span.section-header-name Projects]
 				li markdown
 				li git
 				li open-source
+			a.move-to-top(href="#project-1")
+				i(class="fa fa-caret-square-o-up" aria-hidden="true")
 
-	.project
-		h5.project-title Pastebin client
-		i(class="fa fa-angle-down", aria-hidden="true")
+	.project#project-2
+		h5.project-title Subu Nomo's website
+		i.mobile-projects-display-button(class="fa fa-angle-down", aria-hidden="true")
+		i.tablet-desktop-display-button(class="fa fa-plus-circle", aria-hidden="true")
+		.project-details.closed
+			.project-images-container
+				img.mobile-image(src="../images/subu-nomo/mobile.png", alt="")
+				img.tablet-image(src="../images/subu-nomo/tablet.png", alt="")
+				img.desktop-image(src="../images/subu-nomo/desktop.png", alt="")
+			.project-description.
+				Designed and implemented a responsive layout for the video on the #[a.project-link(href='http://expressjs.com') expressjs.com] home page.
+			ul.keywords
+				li photoshop
+				li html
+				li css
+				li markdown
+				li git
+				li open-source
+			a.move-to-top(href="#project-2")
+				i(class="fa fa-caret-square-o-up" aria-hidden="true")
 
-	.project
+	.project#project-3
 		h5.project-title IFIM College fest
-		i.projects-display-button(class="fa fa-angle-down", aria-hidden="true")
+		i.mobile-projects-display-button(class="fa fa-angle-down", aria-hidden="true")
+		i.tablet-desktop-display-button(class="fa fa-plus-circle", aria-hidden="true")
 		.project-details.closed
 			.project-images-container
 				img(src="../images/aura/mobile.png", alt="")
@@ -37,8 +60,20 @@ h2.section-header #[span.line] #[span.section-header-name Projects]
 				li css
 				li javascript
 				li jquery
+			a.move-to-top(href="#project-3")
+				i(class="fa fa-caret-square-o-up" aria-hidden="true")
 
 	.project
-		h5.project-title 
-		i(class="fa fa-angle-down", aria-hidden="true")
-
+		h5.project-title pbin
+		i.mobile-projects-display-button(class="fa fa-angle-down", aria-hidden="true")
+		i.tablet-desktop-display-button(class="fa fa-plus-circle", aria-hidden="true")
+		.project-details.closed
+			.project-images-container
+				img(src="../images/pbin/pbin.png", alt="")
+			.project-description.
+				Developed a command line pastebin client, #[a.project-link(href='http://github.com/https://github.com/iamropo/pbin') github/pbin] 
+			ul.keywords
+				li node.js
+				li javascript
+			a.move-to-top(href="#project-3")
+				i(class="fa fa-caret-square-o-up" aria-hidden="true")

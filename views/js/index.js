@@ -1,5 +1,6 @@
 const picture = document.querySelector('#profile-picture')
-const projectsDisplayButtons = [...document.querySelectorAll('.projects-display-button')]
+const projectsDisplayButtons = [...document.querySelectorAll('.mobile-projects-display-button')]
+const moveToTopButtons = [...document.querySelectorAll('.move-to-top')]
 
 picture.addEventListener('click', () => {
 	picture.style.animation = 'rotatePicture 1s linear 1 forwards'

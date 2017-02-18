@@ -94,6 +94,13 @@ nav ul li:last-child {
 	}
 }
 
+/* modal */
+
+#modal {
+	position: absolute;
+	background-color: rgba(0, 0, 0, .7);
+}
+
 /* cover */
 
 .header, .section-header {
@@ -131,6 +138,13 @@ canvas {
 
 #skills {
 	margin-bottom: 35px;
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: center;
+}
+
+#skills > div:first-child {
+	width: 100%;
 }
 
 #skills > div {
@@ -141,6 +155,7 @@ canvas {
 }
 
 #skills-list {
+	max-width: 400px;
 	font-size: .9em;
 	list-style-type: none;
 	padding: 0;
@@ -155,7 +170,7 @@ canvas {
 	margin: 0 2px 4px 2px;
 	border-radius: 3px;
 	color: #ffeb3d;
-	background-color: #4c4c4c;
+	background-color: #998d24;
 }
 
 #social {
@@ -209,11 +224,11 @@ canvas {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-content: flex-start;
 }
 
 .project-title {
-	margin: 7px 0px 0px 0px;
+	margin: 15px 0px 0px 0px;
 	font-size: 1.2em;
 	font-weight: lighter;
 	color: #666666;
@@ -222,9 +237,17 @@ canvas {
 .project > i {
 	width: 5%;
 	margin: 15px 0px 13px 13px;
-	font-size: 1.5em;
 	font-weight: bolder;
 	color: #666666;
+}
+
+.mobile-projects-display-button {
+	font-size: 1.5em;
+}
+
+.tablet-desktop-display-button {
+	display: none;
+	font-size: .8em;
 }
 
 .project-details {
@@ -263,12 +286,23 @@ canvas {
 	margin-bottom: 5px;
 }
 
+.tablet-image, .desktop-image {
+	display: none;
+}
+
 .project-description {
 	margin-bottom: 10px;
 }
 
 .project-link {
 	color: #4885ed;
+}
+
+.move-to-top {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	color: #666666;
 }
 
 .keywords {
