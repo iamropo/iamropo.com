@@ -20,14 +20,13 @@
 body {
 	margin: 0;
 	padding-top: 53px;
-	color: #4c4c4c;
-	background-color: #ffeb3d;
+	color: #656565;
+	background-color: #EFEFEF;
 	font-family: 'Helvetica Light', sans-serif;
 }
 
 a {
 	text-decoration: none;
-	color: #4c4c4c;
 }
 
 nav {
@@ -36,12 +35,12 @@ nav {
 	top: 0;
 	width: 100%;
 	padding: 20px 20px 14px 20px;
-	background-color: #fff38f;
+	background-color: #03243C;
 	z-index: 99;
 }
 
 nav a {
-	color: #4c4c4c;
+	color: #86B3D6;
 	font-size: .9em;
 	font-weight: bold;
 	font-family: 'Helvetica Light', sans-serif;	
@@ -108,10 +107,9 @@ nav ul li:last-child {
 }
 
 #name {
-	color: #ffffff;
+	color: #525252;
 	font-size: 3em;
 	font-family: 'averta', serif;	
-	text-shadow: 0px 1px #e8d337;
 	margin: 25px 0;
 	text-align: center;
 }
@@ -169,8 +167,8 @@ canvas {
 	padding: 6px 7px 0px 7px;
 	margin: 0 2px 4px 2px;
 	border-radius: 3px;
-	color: #ffeb3d;
-	background-color: #998d24;
+	color: #7d7d7d;
+	background-color: #E2E2E2;
 }
 
 #social {
@@ -181,6 +179,7 @@ canvas {
 #social > a {
 	font-size: 1.5em;
 	margin: 0px 5px;
+	color: #4C4C4C;
 }
 
 .section {
@@ -202,11 +201,11 @@ canvas {
 	bottom: 0;
 	left: 0;
 	z-index: -9;
-	border-top: 1px solid #e8d337;
+	border-top: 1px solid #FBFBFB;
 }
 
 .section-header-name {
-	background-color: #ffeb3d;
+	background-color: #EFEFEF;
 	padding: 0px 15px;
 }
 
@@ -220,7 +219,7 @@ canvas {
 	padding: 0px 15px;
 	margin-bottom: 7px;
 	font-family: 'Helvetica Thin', sans-serif;
-	background-color: #fffacf;
+	background-color: #FFFFFF;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -231,14 +230,14 @@ canvas {
 	margin: 15px 0px 0px 0px;
 	font-size: 1.2em;
 	font-weight: lighter;
-	color: #666666;
+	color: #86B3D6;
 }
 
 .project > i {
 	width: 5%;
 	margin: 15px 0px 13px 13px;
 	font-weight: bolder;
-	color: #666666;
+	color: #86B3D6;
 }
 
 .mobile-projects-display-button {
@@ -252,6 +251,7 @@ canvas {
 
 .project-details {
 	width: 100%;
+	color: #6A94B3;
 	position: relative;
 	overflow-y: hidden;
 	transition-property: all;
@@ -320,8 +320,8 @@ canvas {
 	padding: 2px 5px 0px 5px;
 	margin: 0 1px 2px 1px;
 	border-radius: 3px;
-	color: #757575;
-	background-color: #fffefa;
+	color: #A8C5DD;
+	background-color: #F9F9F9;
 }
 
 footer {
