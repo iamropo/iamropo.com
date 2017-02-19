@@ -252,13 +252,14 @@ canvas {
 
 .project-details {
 	width: 100%;
+	position: relative;
 	overflow-y: hidden;
 	transition-property: all;
 	transition-duration: .8s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
-.project-details > * {
+.project-details > div, .project-details > ul {
 	width: 100%;
 }
 
@@ -300,8 +301,8 @@ canvas {
 
 .move-to-top {
 	position: absolute;
-	bottom: 10px;
-	right: 15px;
+	bottom: 0px;
+	right: 0px;
 	color: #666666;
 }
 

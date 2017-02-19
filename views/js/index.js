@@ -12,12 +12,12 @@ projectsDisplayButtons.forEach((button) => {
 		
 		let projectDetails = button.nextSibling.nextSibling
 
-		if (projectDetails.className === 'open') {
-			projectDetails.className = 'closed'
-			button.className = 'fa fa-angle-down'		
+		if (projectDetails.className === 'project-details open') {
+			projectDetails.className = 'project-details closed'
+			button.className = 'mobile-projects-display-button fa fa-angle-down'		
 		} else {
-			projectDetails.className = 'open'
-			button.className = 'fa fa-angle-up'		
+			projectDetails.className = 'project-details open'
+			button.className = 'mobile-projects-display-button fa fa-angle-up'		
 		}
 
 	})
