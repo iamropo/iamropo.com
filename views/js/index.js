@@ -10,7 +10,7 @@ projectsDisplayButtons.forEach((button) => {
 	
 	button.addEventListener('click', (event) => {
 		
-		let projectDetails = button.nextSibling
+		let projectDetails = button.nextSibling.nextSibling
 
 		if (projectDetails.className === 'open') {
 			projectDetails.className = 'closed'

@@ -1,0 +1,8 @@
+@keyframes moveToCenter {
+	from {
+			width: 320px;
+		} to {
+			top: 50%;
+			left: 50%;
+		}
+}
