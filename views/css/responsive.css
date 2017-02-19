@@ -87,15 +87,15 @@
 @media all and (min-width: 1800px) {
 	
 	nav {
-		padding: 20px 35% 14px 35%;
+		padding: 20px 30% 14px 30%;
 	}
 
 	#profile-picture {
-		right: 35%;
+		right: 30%;
 	}	
 
 	.section {
-		padding: 0px 35%;
+		padding: 0px 30%;
 	}
 
 }
