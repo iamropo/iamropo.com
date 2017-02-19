@@ -22,7 +22,7 @@ var projects = [
 	{
 		title: 'pbin',
 		description: 'Developed a command line pastebin client, \
-		<a class="project-link" href="https://www.npmjs.com/package/pbin"> github/pbin</a>',
+		<a class="project-link" href="https://www.npmjs.com/package/pbin"> npm/pbin</a>',
 		images: ['pbin/mobile.png'],
 		keywords: ['nodejs', 'npm', 'javascript']
 	}
