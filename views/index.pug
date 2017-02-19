@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title Hage Ropo
+		include includes/header.pug
+	body
+
+		include includes/navigation-bar.pug
+
+		#cover.section
+			include includes/cover.pug
+
+		#projects.section
+			include includes/projects.pug
+
+		-var year = new Date().getFullYear()
+		footer.section &#169; Copyright Hage Ropo #{year} 
+		
+		script
+			include js/cover.js
+			include js/index.js
+			include js/modal.js

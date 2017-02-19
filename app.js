@@ -1,7 +1,15 @@
-const http = require('http');
-const express = require('express');
-var app = express();
+const express = require('express')
+const app = express()
 
-app.use('/', express.static('public'));
+var projects = require('./views/js/data.js')
 
-http.createServer(app).listen(1337, function() {console.log('Server Running...')});
+app.set('view engine', 'pug')
+app.use(express.static('views')) // for serving static files like images
+
+app.get('/', (req, res) => {
+  res.render('index', {projects: projects})
+})
+
+app.listen('3000', () => {
+  console.log('Server Running')
+})

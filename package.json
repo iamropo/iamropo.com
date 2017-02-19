@@ -1,14 +1,23 @@
 {
-  "name": "iamropo",
-  "version": "0.0.0",
+  "name": "iamropo.com",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamropo/iamropo.com.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamropo/iamropo.com/issues"
+  },
+  "homepage": "https://github.com/iamropo/iamropo.com#readme",
   "dependencies": {
-    "express": "~4.13.3"
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
   }
 }
