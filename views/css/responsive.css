@@ -29,6 +29,10 @@
 		margin: 18px 0px 16px 16px;
 	}
 
+	.project-title {
+		margin-bottom: 16px;
+	}
+
 	.closed {
 		display: block;
 	}
@@ -47,68 +51,51 @@
  
 
 }
-/*
+
 @media all and (min-width: 1024px) {
-	
-	body {
-		padding: 75px;
+
+	nav {
+		padding: 20px 15% 14px 15%;
 	}
 
-	#name {
-		font-size: 6.5em;
-	}
-
-	nav, #about, #skills {
-		font-size: 2.5em;
-	}
-
-	#skills {
-		margin-bottom: 40px;
+	#profile-picture {
+		right: 15%;
 	}	
 
-	#skills-list {
-		margin-left: 25px;
-	}
-
-	#links > a {
-		margin: 0px 25px;
-		font-size: 2em;
-	}
-
-	.section-header {
-		font-size: 5em;
-	}
-
-	#projects-container, #misc-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.project, .misc {
-		width: 320px;
-		height: 320px;
-		margin: 25px;
-	}
-
- .project-title, .misc-stuff-title, #hire-status {
-		font-size: 2.2em;
-	}
-	
-	.project > i, .misc > i {
-		display: none;
-	}
-	
-	#hire-status {
-		margin-bottom: 40px;
-	}
-
-	footer {
-		font-size: 2em;
+	.section {
+		padding: 0px 15%;
 	}
 
 }
 
-@media all and (min-width: 1366px) {
+@media all and (min-width: 1280px) {
 
-}*/
+	nav {
+		padding: 20px 20% 14px 20%;
+	}
+
+	#profile-picture {
+		right: 20%;
+	}	
+
+	.section {
+		padding: 0px 20%;
+	}
+
+}
+
+@media all and (min-width: 1800px) {
+	
+	nav {
+		padding: 20px 35% 14px 35%;
+	}
+
+	#profile-picture {
+		right: 35%;
+	}	
+
+	.section {
+		padding: 0px 35%;
+	}
+
+}

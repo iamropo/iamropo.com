@@ -1,18 +1,30 @@
-var projects =  [ 
+var projects = [
 	{
-		title: 'expressjs.com',
-		description: 'Lorem ipsum dolor, majur uzzy ahmed is cooler than floyd mayweather.',
-		keywords: ['photoshop', 'html', 'css']	
+		title: 'Express.js website',
+		description: 'Designed and implemented a responsive layout for the video on the\
+		 <a class="project-link" href="http:\/\/expressjs.com">expressjs.com</a> home page.',
+		 images: ['express-js/mobile.png'],
+		keywords: ['photoshop', 'html', 'css', 'markdown', 'javascript', 'git', 'open-source']	
 	},
 	{
-		title: 'pastebin.com client',
-		description: 'A command line pastebin.co client.',
-		keywords: ['node.js', 'javascript']
+		title: 'Subu Nomo\'s website',
+		description: 'Designed and developed a musician\'s website.',
+		images: ['subu-nomo/mobile.png'],
+		keywords: ['web-audio-api', 'javascript', 'html', 'css']
 	},
 	{
-		title: 'IFIM AURA Fest',
-		description: 'Website for IFIM College\'s festival.',
-		keywords: ['html', 'css', 'javascript', 'ftp']
+		title: 'IFIM College fest',
+		description: 'Designed and developed our college\'s fest website, \
+			<a class="project-link" href="http:\/\/ifimaura2017.com">ifimaura2017.com</a>',
+		images: ['aura/mobile.png', 'aura/mobile-2.png'],
+		keywords: ['html', 'css', 'javascript', 'photoshop', 'jQuery']
+	},
+	{
+		title: 'pbin',
+		description: 'Developed a command line pastebin client, \
+		<a class="project-link" href="https://www.npmjs.com/package/pbin"> github/pbin</a>',
+		images: ['pbin/mobile.png'],
+		keywords: ['nodejs', 'npm', 'javascript']
 	}
 ]
 
