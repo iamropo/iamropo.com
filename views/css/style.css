@@ -21,7 +21,7 @@ body {
 	margin: 0;
 	padding-top: 53px;
 	color: #656565;
-	background-color: #EFEFEF;
+	background-color: #fafafa;
 	font-family: 'Helvetica Light', sans-serif;
 }
 
@@ -132,6 +132,7 @@ canvas {
 
 #about {
 	line-height: 1.5em;
+	padding: 0 10%;
 }
 
 #skills {
@@ -167,8 +168,8 @@ canvas {
 	padding: 6px 7px 0px 7px;
 	margin: 0 2px 4px 2px;
 	border-radius: 3px;
-	color: #7d7d7d;
-	background-color: #E2E2E2;
+	color: rgba(125, 125, 125, 0.79);
+	background-color: rgb(254, 254, 254);
 }
 
 #social {
@@ -190,7 +191,6 @@ canvas {
 .section-header {
 	position: relative;
 	text-align: center;
-	font-size: 2em;
 }
 
 .line {
@@ -201,12 +201,14 @@ canvas {
 	bottom: 0;
 	left: 0;
 	z-index: -9;
-	border-top: 1px solid #E2E2E2;
+	border-top: 1px solid rgba(226, 226, 226, 0.61);
 }
 
 .section-header-name {
-	background-color: #EFEFEF;
+	background-color: #fafafa;
 	padding: 0px 15px;
+	text-transform: uppercase;
+	font-size: 75%;
 }
 
 #projects-container {
@@ -219,7 +221,9 @@ canvas {
 	padding: 0px 15px;
 	margin-bottom: 7px;
 	font-family: 'Helvetica Thin', sans-serif;
-	background-color: #FFFFFF;
+	color: rgba(125, 125, 125, 0.79);
+	background-color: rgba(255, 255, 255, 0.81);
+	border-radius: 1px 2px rgba(226, 226, 226, 0.33);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -230,7 +234,6 @@ canvas {
 	margin: 15px 0px 0px 0px;
 	font-size: 1.2em;
 	font-weight: lighter;
-	color: #86B3D6;
 }
 
 .project > i {
@@ -251,7 +254,6 @@ canvas {
 
 .project-details {
 	width: 100%;
-	color: #6A94B3;
 	position: relative;
 	overflow-y: hidden;
 	transition-property: all;
@@ -316,12 +318,12 @@ canvas {
 }
 
 .keywords li {
-	font-size: 75%;
+	font-size: 55%;
 	padding: 2px 5px 0px 5px;
 	margin: 0 1px 2px 1px;
 	border-radius: 3px;
-	color: #A8C5DD;
-	background-color: #F9F9F9;
+	color: #b1d3f1;
+	text-transform: uppercase;
 }
 
 footer {
