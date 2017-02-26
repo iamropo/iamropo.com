@@ -85,21 +85,6 @@ nav ul li:last-child {
 	width: 100%;
 }
 
-@keyframes rotatePicture {
-	from {
-		transform: rotateZ(0deg);
-	} to {
-		transform: rotateZ(360deg);
-	}
-}
-
-/* modal */
-
-#modal {
-	position: absolute;
-	background-color: rgba(0, 0, 0, .7);
-}
-
 /* cover */
 
 .header, .section-header {
@@ -109,7 +94,6 @@ nav ul li:last-child {
 #name {
 	color: #525252;
 	font-size: 3em;
-	font-family: 'averta', serif;	
 	margin: 25px 0;
 	text-align: center;
 }
@@ -118,16 +102,6 @@ nav ul li:last-child {
 	font-size: 1em;
 	margin-bottom: 35px;
 	text-align: center;
-}
-
-canvas {
-	display: none;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	padding: 15px 20px;
 }
 
 #about {
